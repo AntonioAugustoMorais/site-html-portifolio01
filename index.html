@@ -4,119 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        h3, h2 {
-            text-align: center;
-        }
-        .saidbar {
-            padding: 10px;
-            text-align: center;
-        }
-        .about {
-            display: flex;
-            height: 500px;
-            align-items: center;
-            justify-content: center;
-        }
-        .about .about-content {
-            width: 30%;
-            padding: 3rem;
-        }
-        .about .logo img {
-            padding: 2rem;
-            width: 13rem; 
-        }
-        .formation {
-            justify-content: center;
-        }
-        .formation .formation-content {
-            display: flex;
-        }
-        .technology {
-            display: flex;
-            height: 400px;
-            justify-content: center;
-            align-items: center;
-        }
-        .technology .technology-content-left {
-            width: 100%;
-            padding: 30px;
-        }
-        .technology .technology-content-left img {
-            width: 3rem;
-            padding: 30px 5px;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            height: 400px;
-        }
-        .form-right {
-            width: 50%;
-            text-align: center;
-            padding: 30px;
-        }
-        .form-right input[type=text],
-        .form-right input[type=email] {
-            padding-left: 10px;
-            display: block;
-            border-radius: 10px;
-            margin: 10px auto;
-            width: 100%;
-            height: 25px;
-            border: 1px solid #ccc;
-            font-size: 13px;
-        }
-        .form-right textarea {
-            padding-left: 10px;
-            resize: vertical;
-            display: block;
-            border-radius: 10px;
-            margin: 10px auto;
-            width: 100%;
-            height: 120px;
-            border: 1px solid #ccc;
-            font-size: 14px;
-        }
-        .form-right input[type=submit] {
-            padding-left: 10px;
-            display: block;
-            border-radius: 10px;
-            margin: 10px auto;
-            width: 30%;
-            cursor: pointer;
-            color: white;
-            background-color: #868999;
-            height: 25px;
-            border: 1px solid #ccc;
-        }
-        footer {
-            padding: 10px;
-            height: 15px;
-            background-color: #2e2e30;
-            color: white;
-            justify-content: center;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="saidbar">
+    <header class="saidbar">
+        <div class="saidbar-content">
             <div class="text">
                 <h2>Antonio A. M. Holanda</h2>
                 <h1>Web Developer</h1>
             </div>
+            <a href="https://www.linkedin.com/in/augusto-m-5718611a1/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" /></a>
         </div>
     </header>
     <hr>
@@ -128,23 +28,23 @@
             </div>
             <div class="logo" style="display: flex;">
                 <img src="/imagens/logo-git.png" alt="logo-git">
-                <a href="https://www.linkedin.com/in/augusto-m-5718611a1/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original-wordmark.svg" /></a>
             </div>
         </div><!-- sessão about -->
+        
         <div class="formation">
-            <h2>Formação</h2>
-            <div class="formation-content">
-                <img src="/imagens/ICONE1.png" alt="">
-                <ul>Superior de Tecnologia</ul>
-                <img src="/imagens/ICONE2.png" alt="">
-                <ul>Análise e Desenvolvimento de Sistemas</ul>
-                <img src="/imagens/ICONE3.png" alt="">
-                <ul>Centro Universitário Augusto Motta</ul>
+            <div class="formation-content-left">
+                <h2>Formação</h2>
+                <div>
+                    <img src="/imagens/ICONE2.png" alt="">
+                    <ul>
+                        <li>Superior de Tecnologia</li>
+                        <li>Análise e Desenvolvimento de Sistemas</li>
+                        <li>Centro Universitário Augusto Motta</li>
+                    </ul>
+                </div>
             </div>
-        </div><!-- sessão formation -->
-        <div class="technology">
-            <div class="technology-content-left">
-                <h3>Tecnologia</h3>
+            <div class="technology-content-right">
+                <h2>Tecnologia</h2>
                 <div>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />                
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />               
@@ -158,22 +58,23 @@
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />                
                 </div>
             </div>
-        </div>
+        </div><!-- section technology -->
+
         <div class="contact">
-            <div class="form-right">
-                <h3>Contato</h3>
+            <div class="form">
+                <h2>Contato</h2>
                 <img src="#" alt="">
                 <input type="text" name="nome" id="" placeholder="Seu nome...">
                 <input type="email" name="email" id="" placeholder="Seu email...">
                 <textarea placeholder="Sua mensagem..."></textarea>
                 <input type="submit" value="Enviar">
             </div>
-        </div> 
+        </div><!-- section contact -->
 
     </main>
     
     <footer>
-        <span>Direitos reservados | Rio de Janeiro 2022</span>
+        <p>Direitos reservados | Rio de Janeiro 2022</p>
     </footer>
 </body>
 </html>
