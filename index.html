@@ -4,168 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <style>
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    :root {
-        --gradient: linear-gradient(
-            to right,
-            rgb(149 114 252),
-            rgb(67 231 173),
-            rgb(226 212 92)
-        )
-        
-    }
-    body {
-        background-image: linear-gradient(
-            45deg, black, #221133
-        );
-
-        color: white;
-    }
-    h1, h2 {
-        font-family: 'Bebas Neue', cursive;
-        background-image: var(--gradient);
-        
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        
-        text-align: center;
-    }
-    h1 {
-        font-size: 45px;
-    }
-    h2 {
-        text-align: center;
-        justify-content: center;
-    }
-    .saidbar {
-        display: flex;
-        justify-content: center;
-    }
-    .saidbar .saidbar-content {
-        display: flex;
-    }
-    .saidbar .saidbar-content .text {
-        padding: 0 50px;    
-    }
-    .saidbar img {
-        height: 100%;
-        width: 30px;
-    }
-
-    /* =======sessão sobre======= */
-    .about {
-        display: flex;
-        width: 100%; 
-        height: 700px;
-        align-items: center;
-        justify-content: center;
-    }
-    .about .about-content {
-        width: 30%;
-        padding: 3rem;
-
-        border: 4px solid white;
-        border-image: var(--gradient) 1;
-    }
-    .about .logo img {
-        width: 15rem; 
-    }
-
-    /* =============section technology============== */
-    .formation {
-        height: 400px;
-        width: 100%;
-        display: flex;
-    }
-    .formation-content-left {
-        width: 50%;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-    }
-    .technology-content-right {
-        width: 50%;
-        padding: 30px;
-        display: flex;
-        justify-content: center;
-    }
-    .technology-content-right img {
-        width: 40px;
-        padding: 30px 5px;
-    }
-
-    /* ==============section contact============= */
-    .contact {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        height: 400px;
-    }
-    .form {
-        width: 50%;
-        text-align: center;
-        padding: 30px;
-    }
-    .form input[type=text],
-    .form input[type=email] {
-        padding-left: 10px;
-        display: block;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 100%;
-        height: 25px;
-        border: 1px solid #ccc;
-        font-size: 13px;
-    }
-    .form textarea {
-        padding-left: 10px;
-        resize: vertical;
-        display: block;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 100%;
-        height: 120px;
-        border: 1px solid #ccc;
-        font-size: 14px;
-    }
-    .form input[type=submit] {
-        padding-left: 10px;
-        display: block;
-        border-radius: 10px;
-        margin: 10px auto;
-        width: 30%;
-        cursor: pointer;
-        color: white;
-        background-color: #868999;
-        height: 25px;
-        border: 1px solid #ccc;
-    }
-    footer {
-        height: 40px;
-
-        background-color: #2e2e30;
-        color: white;
-
-        justify-content: center;
-        text-align: center;
-    }
-    footer p {
-        padding: 13px;
-    }
-
-    </style>
 </head>
 
 <body>
@@ -180,56 +22,138 @@
     </header>
     <hr>
     <main>
-        <div class="about">
-            <div class="about-content">            
-                <h3>Perfil profissional</h3>
-                <span>Comprometido, dedicado e honesto. Desejo, ao ingressar na presente instituição trabalhar com qualidade, compromisso, ética moral e profissional, empregando meus conhecimentos e contribuindo para o desenvolvimento e crescimento da mesma.</span>
+        <section id="about">
+            <div class="about">
+                <div class="about-content">            
+                    <h2>Perfil profissional</h2>
+                    <span>Comprometido, dedicado e honesto. Desejo, ao ingressar na presente instituição trabalhar com qualidade, compromisso, ética moral e profissional, empregando meus conhecimentos e contribuindo para o desenvolvimento e crescimento da mesma.</span>
+                </div>
+                <div class="logo" style="display: flex;">
+                    <img src="/imagens/logo-git.png" alt="logo-git">
+                </div>
             </div>
-            <div class="logo" style="display: flex;">
-                <img src="/imagens/logo-git.png" alt="logo-git">
-            </div>
-        </div><!-- sessão about -->
+        </section><!-- sessão about -->
         
-        <div class="formation">
-            <div class="formation-content-left">
-                <h2>Formação</h2>
-                <div>
-                    <img src="/imagens/ICONE2.png" alt="">
-                    <ul>
-                        <li>Superior de Tecnologia</li>
-                        <li>Análise e Desenvolvimento de Sistemas</li>
-                        <li>Centro Universitário Augusto Motta</li>
-                    </ul>
+        <section>
+            <div class="formation">
+                <div class="formation-content">
+                    <h2>Formação</h2>
+                    <div>
+                        <img src="/imagens/ICONE2.png" alt="">                        
+                    </div>
+                    <span>Superior de Tecnologia</span>
+                    <br>
+                    <span>Análise e Desenvolvimento de Sistemas</span>
+                    <br>
+                    <span>Centro Universitário Augusto Motta</span>                    
+                </div>
+        </section><!-- ============== section formation =============== -->
+
+        <section>
+            <div class="technology">
+                <h2>Tecnologsia</h2>
+                <div class="technology-content">
+                    <div class="column left">
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />
+                            <div class="info">
+                                <span>Windows</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line wind"></div>
+                        </div>                
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>                
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>                 
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                            <div class="info">
+                                <span>React JS</span>
+                                <span>05%</span>
+                            </div>
+                            <div class="line react"></div>
+                        </div>
+                    </div>
+
+                    <div class="column right">
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+                            <div class="info">
+                                <span>Linux</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="line linux"></div>
+                        </div> 
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+                            <div class="info">
+                                <span>C#</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="line cshap"></div>
+                        </div>                 
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                            <div class="info">
+                                <span>Python</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="line python"></div>
+                        </div>                 
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />
+                            <div class="info">
+                                <span>Git</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="line git"></div>
+                        </div>                 
+                        <div class="bars">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />
+                            <div class="info">
+                                <span>Java</span>
+                                <span>15%</span>
+                            </div>
+                            <div class="line java"></div>
+                        </div>                 
+                    </div>
                 </div>
             </div>
-            <div class="technology-content-right">
-                <h2>Tecnologia</h2>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />               
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" />                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />                
+        </section><!-- section technology -->
+
+        <section>
+            <div class="contact">
+                <div class="form">
+                    <h2>Contato</h2>
+                    <img src="#" alt="">
+                    <input type="text" name="nome" id="" placeholder="Seu nome...">
+                    <input type="email" name="email" id="" placeholder="Seu email...">
+                    <textarea placeholder="Sua mensagem..."></textarea>
+                    <input type="submit" value="Enviar">
                 </div>
             </div>
-        </div><!-- section technology -->
-
-        <div class="contact">
-            <div class="form">
-                <h2>Contato</h2>
-                <img src="#" alt="">
-                <input type="text" name="nome" id="" placeholder="Seu nome...">
-                <input type="email" name="email" id="" placeholder="Seu email...">
-                <textarea placeholder="Sua mensagem..."></textarea>
-                <input type="submit" value="Enviar">
-            </div>
-        </div><!-- section contact -->
-
+        </section><!-- section contact -->
     </main>
     
     <footer>
